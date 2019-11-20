@@ -91,8 +91,11 @@ if (a>=-999&&a<=-100){
  Измените код так, чтобы она выводила «ThreeFive» для всех чисел, которые делятся и на 3 и на 5.
 */
 
-let a = 0;
-
-while (i<100, i, i++)
-  
+for(a = 1; a <=100; a++){
+  let output = "";
+  if (a % 3 == 0) output = "Three";
+  if (a % 5 == 0) output = "Five";
+  if (a % 3 == 0 && a % 5 == 0) output = "ThreeFive"
+  console.log(output || a)
+}
   
